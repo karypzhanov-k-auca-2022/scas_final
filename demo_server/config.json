@@ -1,8 +1,42 @@
 {
-  "page_title": "Гараж",
-  "widgets": [
-    { "type": "header", "text": "Система Охраны" },
-    { "type": "card", "color": "red", "child": { "type": "text", "text": "ВНИМАНИЕ: ДВИЖЕНИЕ" } },
-    { "type": "toggle", "label": "Сирена", "initial_value": true }
+  "app_title": "IoT Controller Hub",
+  "scenarios": [
+    {
+      "id": "living_room",
+      "name": "🛋 Гостиная",
+      "config": {
+        "page_title": "Гостиная",
+        "widgets": [
+          { "type": "header", "text": "Управление светом" },
+          { "type": "card", "color": "green", "child": { "type": "text", "text": "Статус: Комфорт" } },
+          { "type": "toggle", "label": "Люстра", "initial_value": true }
+        ]
+      }
+    },
+    {
+      "id": "kitchen",
+      "name": "🍳 Умная Кухня",
+      "config": {
+        "page_title": "Умная Кухня",
+        "widgets": [
+          { "type": "header", "text": "Климат и Вентиляция" },
+          { "type": "text", "text": "Температура: 24°C" },
+          { "type": "slider", "label": "Мощность вытяжки", "min": 0, "max": 100 },
+          { "type": "toggle", "label": "Подсветка зоны", "initial_value": false }
+        ]
+      }
+    },
+    {
+      "id": "garage",
+      "name": "🚗 Гараж",
+      "config": {
+        "page_title": "Гараж",
+        "widgets": [
+          { "type": "header", "text": "Система Охраны" },
+          { "type": "card", "color": "red", "child": { "type": "text", "text": "ВНИМАНИЕ: ДВИЖЕНИЕ" } },
+          { "type": "toggle", "label": "Сирена", "initial_value": true }
+        ]
+      }
+    }
   ]
 }
