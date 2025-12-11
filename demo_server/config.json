@@ -1,0 +1,8 @@
+{
+  "page_title": "Гараж",
+  "widgets": [
+    { "type": "header", "text": "Система Охраны" },
+    { "type": "card", "color": "red", "child": { "type": "text", "text": "ВНИМАНИЕ: ДВИЖЕНИЕ" } },
+    { "type": "toggle", "label": "Сирена", "initial_value": true }
+  ]
+}
