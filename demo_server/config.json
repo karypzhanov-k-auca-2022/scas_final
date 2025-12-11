@@ -37,6 +37,35 @@
           { "type": "toggle", "label": "Сирена", "initial_value": true }
         ]
       }
+    },
+    {
+      "id": "rgb_strip",
+      "name": "🌈 RGB Подсветка",
+      "config": {
+        "page_title": "RGB Подсветка",
+        "widgets": [
+          { "type": "header", "text": "Настройка Цвета" },
+          { "type": "slider", "label": "Красный (R)", "min": 0, "max": 255 },
+          { "type": "slider", "label": "Зеленый (G)", "min": 0, "max": 255 },
+          { "type": "slider", "label": "Синий (B)", "min": 0, "max": 255 },
+          { "type": "toggle", "label": "Режим светомузыки", "initial_value": false }
+        ]
+      }
+    },
+    {
+      "id": "weather",
+      "name": "🌡 Метеостанция",
+      "config": {
+        "page_title": "Метеостанция",
+        "widgets": [
+          { "type": "header", "text": "Улица" },
+          { "type": "card", "color": "blue", "child": { "type": "text", "text": "Влажность: 45%" } },
+          { "type": "card", "color": "white", "child": { "type": "text", "text": "Давление: 760 мм" } },
+          { "type": "header", "text": "Дом" },
+          { "type": "text", "text": "CO2: 450 ppm (Норма)" },
+          { "type": "toggle", "label": "Проветривание", "initial_value": true }
+        ]
+      }
     }
   ]
 }
