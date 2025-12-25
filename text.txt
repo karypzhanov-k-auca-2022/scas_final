@@ -1,0 +1,5 @@
+cd /Users/admintesting/FLUTTER_PROJECTS/Diplom/scas_final/demo_server
+python3 -m http.server 8000
+
+cd /Users/admintesting/FLUTTER_PROJECTS/Diplom/scas_final
+flutter run
